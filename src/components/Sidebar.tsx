@@ -9,7 +9,8 @@ import {
   HelpCircle,
   TrendingUp,
   ShieldCheck,
-  LogOut
+  LogOut,
+  ClipboardCheck
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
@@ -23,6 +24,7 @@ const navItems = [
   { icon: LayoutDashboard, label: "Dashboard", href: "/", roles: ['super_admin', 'support', 'finance'] },
   { icon: MessageSquare, label: "Live Support", href: "/support", badge: 3, roles: ['super_admin', 'support'] },
   { icon: Users, label: "Users", href: "/users", roles: ['super_admin', 'finance'] },
+  { icon: ClipboardCheck, label: "Driver Approvals", href: "/driver-approvals", roles: ['super_admin', 'support'] },
   { icon: TrendingUp, label: "Analytics", href: "/analytics", roles: ['super_admin', 'finance'] },
   { icon: ShieldCheck, label: "Security", href: "/security", roles: ['super_admin'] },
 ];
